@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 25px;
+  background-color:thistle;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form name="Student Registration form" method="POST" data-netlify="true">
+  <div class="container">
+    <h1 style="text-align: center;">Registration Form</h1>
+    <p style="color: red;">Please fill your correct details in the below form.</p>
+    <hr>
+
+    <label for="student Name"></label><b>Student name</b>
+    <input type="text" placeholder="Enter Student Name" name="Student"  required>
+
+    <label for="father"><b>Father's Name</b></label>
+    <input type="text" placeholder="Enter Father's Name" name="father"  required>
+
+    <label for="mother"><b>Mother's Name</b></label>
+    <input type="text" placeholder="Enter Mother Name" name="mother" required>
+    
+    <label for="father"><b>Father's Occupation</b></label>
+    <input type="text" placeholder="Enter father Occupation" name="f_occupation"  required>
+
+    <label for="dob"><b>Date of Birth</b></label><br>
+    <input type="date" placeholder="Enter Mother Name" name="dob"  required><br><br>
+
+    <label for="caste"><b>Caste</b></label>
+    <input type="text" placeholder="Enter caste Name" name="Caste"  required>
+
+    <label for="gender"><b>Gender</b></label><br>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+    
+
+    <label for="class" ><b>Class (Standard)</b></label><br>
+    <input type="text" placeholder="Enter the Std of the student" name="std" required><br><br>
+    <label for="medium"><b>Medium</b></label><br>
+    <input type="radio" name="medium" value="Kannada">Kannada<br>
+    <input type="radio" name="medium" value="English">English<br><br><br>
+
+    <label for="school Address"><b>School Name</b></label><br>
+    <input type="text" name="schoolname" placeholder="Enter Your Previous School Name here"> 
+      <br>
+    <label for="Address"><b>Your Address</b></label><br>
+    <input type="text" name="Address" placeholder="Enter your Address"> 
+    <br><br>
+    <label for="mobile"><b>Mobile Number</b></label><br>
+    <input type="text" placeholder="please etner your 10 digit mobile number" name="mobile" required>
+    <br>
+    <a href="https://chat.whatsapp.com/LDcf0IkZ3wT2oSkPwH6Hko">Click here to join our WhatsApp Group</a><br>
+    <hr>
+
+    <p>By Submiting the form, you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+  <div class="container signin">
+    <p>Ensure your details and submit it, <a href="#">for more details</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
+
